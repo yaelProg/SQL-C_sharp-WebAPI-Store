@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetProject", "AdoNetProject\AdoNetProject.csproj", "{90252F09-363F-495A-B8C1-8AA014E72665}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90252F09-363F-495A-B8C1-8AA014E72665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90252F09-363F-495A-B8C1-8AA014E72665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90252F09-363F-495A-B8C1-8AA014E72665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90252F09-363F-495A-B8C1-8AA014E72665}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F30F4693-5D74-4D07-9848-D41580D75E63}
+	EndGlobalSection
+EndGlobal

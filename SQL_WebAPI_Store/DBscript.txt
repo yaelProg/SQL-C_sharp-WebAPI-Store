@@ -1,0 +1,55 @@
+
+CREATE DATABASE Store_325905206
+------------------------------------------------------------------------------------
+
+USE Store_325905206
+
+CREATE TABLE User_tbl
+(
+	USER_ID smallint identity(1,1) primary key,
+	EMAIL  varchar(40),
+	FIRST_NAME varchar(40),
+	LAST_NAME varchar(40),
+	PASSWORD varchar(40)
+)
+GO
+
+CREATE TABLE Category_tbl
+(
+	CATEGORY_ID int identity(100, 1) primary key,
+	CATEGORY_NAME  varchar(40) unique,
+)
+GO
+
+CREATE TABLE Product_tbl
+(
+	PRODUCT_ID smallint identity(1,1) primary key,
+	PRODUCT_NAME varchar(40),
+	PRICE int,
+	CATEGORY_ID int references Category_tbl,
+	DESCRIPTION varchar(500),
+  IMAGE_URL varchar(100)
+)
+GO
+
+CREATE TABLE Order_tbl
+(
+	ORDER_ID int identity(100,1) primary key,
+	ORDER_DATE date default GETDATE(),
+	ORDER_SUM int,
+	USER_ID smallint references User_tbl,
+)
+GO
+
+CREATE TABLE OrderItem_tbl
+(
+	ORDER_ITEM_ID int identity(100,1) primary key,
+	PRODUCT_ID smallint references Product_tbl,
+	ORDER_ID int references Order_tbl,
+	QUANTITY int
+)
+GO
+------------------------------------------------------------------------------------
+
+
+
